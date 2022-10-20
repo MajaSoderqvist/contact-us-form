@@ -1,0 +1,84 @@
+html {
+  --color-main-500: rgb(30, 30, 30);
+  --color-main-300: rgb(83, 83, 83);
+  --color-main-100: rgb(146, 146, 146);
+  --color-main-000: white;
+
+  --color-secondary-light: rgb(218, 238, 255);
+  --color-secondary-: rgb(99, 167, 225);
+}
+
+body {
+  background-color: var(--color-main-100);
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  max-width: 40rem;
+  background-color: var(--color-main-000);
+  margin: 2rem auto;
+  border-radius: 6px;
+  padding: 1rem;
+  box-shadow: rgb(48, 48, 48) 0px 0px 10px 3px;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+input,
+textarea,
+select {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1.5rem;
+  font: inherit;
+  padding: 0.5rem 0.2rem;
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus {
+  background-color: var(--color-secondary-light);
+  border-color: black;
+}
+
+.form-control-inline {
+  display: flex;
+}
+
+.form-control-inline input {
+  width: auto;
+}
+
+#button {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.2rem;
+}
+
+button {
+  padding: 0.3rem 1rem;
+  font: inherit;
+  border-radius: 4px;
+}
+
+#submit {
+  background-color: var(--color-main-500);
+  color: white;
+}
