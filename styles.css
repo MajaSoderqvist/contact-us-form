@@ -1,14 +1,15 @@
 html {
-  --color-light-: #fff6e8;
+  --color-light-: #f4f0e9;
   --color-medium-: #f4e6d3;
   --color-dark-: #545455;
   --color-darker-: #272727;
   --color-main-: #798e73;
-  --color-main-highlight-: #96b18b;
+  --color-main-light-: #96b18b;
+  --color-main-highlight-: #beceb8;
 }
 
 body {
-  background-color: var(--color-light-);
+  background-color: white;
   font-family: "Roboto", sans-serif;
 }
 
@@ -23,7 +24,7 @@ h2 {
 
 form {
   max-width: 40rem;
-  background-color: var(--color-medium-);
+  background-color: var(--color-light-);
   margin: 2rem auto;
   border-radius: 6px;
   padding: 1rem;
@@ -57,7 +58,7 @@ select {
 
 input:focus,
 textarea:focus {
-    background-color: var(--color-light-);
+    background-color: var(--color-main-highlight-);
 }
 
 textarea {
@@ -99,5 +100,5 @@ button {
 }
 
 #submit:hover {
-  background-color: var(--color-main-highlight-);
+  background-color: var(--color-main-light-);
 }
