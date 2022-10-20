@@ -1,25 +1,29 @@
 html {
-  --color-main-500: rgb(30, 30, 30);
-  --color-main-300: rgb(83, 83, 83);
-  --color-main-100: rgb(146, 146, 146);
-  --color-main-000: white;
-
-  --color-secondary-light: rgb(218, 238, 255);
-  --color-secondary-: rgb(99, 167, 225);
+  --color-light-: #fff6e8;
+  --color-medium-: #f4e6d3;
+  --color-dark-: #545455;
+  --color-darker-: #272727;
+  --color-main-: #798e73;
+  --color-main-highlight-: #96b18b;
 }
 
 body {
-  background-color: var(--color-main-100);
+  background-color: var(--color-light-);
   font-family: "Roboto", sans-serif;
 }
 
 h1 {
   text-align: center;
+  color: var(--color-darker-);
+}
+
+h2 {
+  color: var(--color-darker-);
 }
 
 form {
   max-width: 40rem;
-  background-color: var(--color-main-000);
+  background-color: var(--color-medium-);
   margin: 2rem auto;
   border-radius: 6px;
   padding: 1rem;
@@ -47,15 +51,17 @@ select {
   margin-bottom: 1.5rem;
   font: inherit;
   padding: 0.5rem 0.2rem;
+  border-radius: 4px;
+  border: 2px solid var(--color-dark-);
+}
+
+input:focus,
+textarea:focus {
+    background-color: var(--color-light-);
 }
 
 textarea {
   resize: none;
-}
-
-input:focus {
-  background-color: var(--color-secondary-light);
-  border-color: black;
 }
 
 .form-control-inline {
@@ -76,9 +82,22 @@ button {
   padding: 0.3rem 1rem;
   font: inherit;
   border-radius: 4px;
+  border: 2px solid var(--color-dark-);
+}
+
+#clear {
+  color: var(--color-darker-);
+}
+
+#clear:hover {
+  background-color: white;
 }
 
 #submit {
-  background-color: var(--color-main-500);
+  background-color: var(--color-main-);
   color: white;
+}
+
+#submit:hover {
+  background-color: var(--color-main-highlight-);
 }
